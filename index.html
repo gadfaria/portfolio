@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gabriel Faria</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <a href="#" class="title">Gabriel Faria </a>
+      <div class="menuToggle" onclick="toggleMenu();"></div>
+      <ul class="navigation">
+        <li><a href="#banner" onclick="toggleMenu();">Home</a></li>
+        <li><a href="#about" onclick="toggleMenu();">About</a></li>
+        <li><a href="#services" onclick="toggleMenu();">Services</a></li>
+        <li><a href="#projects" onclick="toggleMenu();">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+      </ul>
+    </header>
+
+    <img src="./assets/direito.png" class="right" />
+
+    <section class="banner" id="banner">
+      <div class="content">
+        <div class="column" data-aos="fade-right" data-aos-duration="2000">
+          <div class="presentation">
+            <div class="line">
+              <svg
+                width="3"
+                height="192"
+                viewBox="0 0 3 192"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <line
+                  x1="1.5"
+                  y1="-6.55671e-08"
+                  x2="1.50001"
+                  y2="192"
+                  stroke="#407BFF"
+                  stroke-width="3"
+                />
+              </svg>
+            </div>
+            <div class="text">
+              <span class="line-one">Hello, my name is</span>
+              <span class="line-two">Gabriel Faria</span>
+              <span class="line-three"
+                >and I'm a <b>full-stack developer</b></span
+              >
+            </div>
+          </div>
+          <a class="btn">Contact me</a>
+        </div>
+        <img
+          class="img"
+          src="./assets/bonecotop.png"
+          data-aos="fade-left"
+          data-aos-duration="2000"
+        />
+      </div>
+    </section>
+
+    <img src="./assets/esquerdo.png" class="left" />
+    <section
+      class="about"
+      id="about"
+      data-aos="zoom-in"
+      data-aos-duration="2000"
+      data-aos-delay="200"
+    >
+      <div class="column">
+        <div class="text">
+          <span class="title">About Me</span>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Velit ut
+            tortor pretium viverra. Duis ultricies lacus sed turpis tincidunt id
+            aliquet. Volutpat commodo sed egestas egestas fringilla phasellus
+            faucibus scelerisque.<br /><br />
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Sem
+            viverra aliquet eget sit amet tellus cras adipiscing. Orci a
+            scelerisque purus semper eget duis at tellus. Quam elementum
+            pulvinar etiam non quam lacus. Suscipit tellus mauris a diam
+            maecenas sed enim ut. Faucibus scelerisque eleifend donec pretium.
+          </p>
+        </div>
+      </div>
+
+      <img class="img" src="./assets/teste.png" />
+    </section>
+
+    <section class="services" id="services">
+      <span
+        class="title"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
+        My Services
+      </span>
+      <div class="cards">
+        <div
+          class="card"
+          data-aos="flip-right"
+          data-aos-duration="2000"
+          data-aos-offset="0"
+        >
+          <img class="img" src="./assets/image1.png" />
+          <span class="title-text">tetetete</span>
+          <span class="text">tetetete</span>
+        </div>
+        <div
+          class="card"
+          data-aos="flip-right"
+          data-aos-duration="2000"
+          data-aos-offset="165"
+        >
+          <img class="img" src="./assets/image1.png" />
+          <span class="title-text">tetetete</span>
+          <span class="text">tetetete</span>
+        </div>
+        <div
+          class="card"
+          data-aos="flip-right"
+          data-aos-duration="2000"
+          data-aos-offset="330"
+        >
+          <img class="img" src="./assets/image1.png" />
+          <span class="title-text">tetetete</span>
+          <span class="text">tetetete</span>
+        </div>
+        <div
+          class="card"
+          data-aos="flip-right"
+          data-aos-duration="2000"
+          data-aos-offset="495"
+        >
+          <img class="img" src="./assets/image1.png" />
+          <span class="title-text">tetetete</span>
+          <span class="text">tetetete</span>
+        </div>
+      </div>
+    </section>
+
+    <script type="text/javascript">
+      window.addEventListener("scroll", function () {
+        const header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
+
+      function toggleMenu() {
+        const menuToggle = document.querySelector(".menuToggle");
+        const navigation = document.querySelector(".navigation");
+        menuToggle.classList.toggle("active");
+        navigation.classList.toggle("active");
+      }
+
+      AOS.init();
+    </script>
+  </body>
+</html>

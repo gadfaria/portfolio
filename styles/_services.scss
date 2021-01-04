@@ -1,0 +1,46 @@
+.services,
+.services .title,
+.services .cards,
+.services .cards .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.services {
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+
+  .title {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 72px;
+    margin-bottom: 30px;
+  }
+
+  .cards {
+    flex-direction: row;
+
+    .card {
+      flex-direction: column;
+      width: 250px;
+      height: 250px;
+      box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.25);
+      border-radius: 8px;
+      margin-right: 30px;
+
+      .title-text {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 27px;
+      }
+
+      .text {
+        font-size: 14px;
+        line-height: 21px;
+        text-align: center;
+      }
+    }
+  }
+}
