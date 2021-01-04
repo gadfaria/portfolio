@@ -1,0 +1,21 @@
+@import "./reset.scss";
+@import "./variables";
+
+@import "./header";
+@import "./banner";
+@import "./about";
+@import "./services";
+
+
+
+.right {
+    position: absolute;
+    right: 0;
+    height: 1200px;
+}
+
+.left{
+    position: absolute;
+    left: 0;
+    height: 1200px;
+}
