@@ -1,0 +1,87 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+
+  .title {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 72px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+
+    .subtitle {
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 36px;
+    }
+
+    .column {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+
+      .text {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+
+    .form {
+      display: flex;
+      width: 32%;
+      flex-direction: column;
+
+      form {
+        .first-line {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-direction: row;
+          input {
+            width: 250px;
+          }
+        }
+        .form-box {
+          position: relative;
+
+          input {
+            padding: 18px 10px 10px 10px;
+            font-size: 16px;
+            color: $black;
+            border: 1px solid $black;
+            box-sizing: border-box;
+            border-radius: 8px;
+          }
+
+          .large {
+              width: 545px;
+          }
+
+          label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 13px 10px 10px 10px;
+            font-size: 18px;
+            line-height: 27px;
+            color: $black;
+            // pointer-events: none;
+            transition: 0.5s;
+          }
+          input:focus ~ label,
+          input:valid ~ label {
+            top: -12px;
+            left: 0;
+            color: $blue;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -294,6 +294,125 @@ header .navigation li a:hover {
   text-align: center;
 }
 
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.contact .title {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 72px;
+}
+
+.contact .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.contact .container .subtitle {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.contact .container .column {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact .container .column .text {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.contact .container .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 32%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact .container .form form .first-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.contact .container .form form .first-line input {
+  width: 250px;
+}
+
+.contact .container .form form .form-box {
+  position: relative;
+}
+
+.contact .container .form form .form-box input {
+  padding: 18px 10px 10px 10px;
+  font-size: 16px;
+  color: #000000;
+  border: 1px solid #000000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.contact .container .form form .form-box .large {
+  width: 545px;
+}
+
+.contact .container .form form .form-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 13px 10px 10px 10px;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000000;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.contact .container .form form .form-box input:focus ~ label,
+.contact .container .form form .form-box input:valid ~ label {
+  top: -12px;
+  left: 0;
+  color: #407BFF;
+  font-size: 12px;
+}
+
 .right {
   position: absolute;
   right: 0;
