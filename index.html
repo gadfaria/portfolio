@@ -54,7 +54,7 @@
               >
             </div>
           </div>
-          <a class="btn">Contact me</a>
+          <a class="btn" href="#contact" onclick="toggleMenu();">Contact me</a>
         </div>
         <img
           class="img"
@@ -69,9 +69,10 @@
     <section
       class="about"
       id="about"
-      data-aos="zoom-in"
-      data-aos-duration="2000"
-      data-aos-delay="200"
+      data-aos="fade-right"
+      data-aos-offset="300"
+      data-aos-duration="500"
+      data-aos-easing="ease-in-sine"
     >
       <div class="column">
         <div class="text">
@@ -96,11 +97,7 @@
     </section>
 
     <section class="services" id="services">
-      <span
-        class="title"
-        data-aos="fade-up"
-        data-aos-duration="2000"
-      >
+      <span class="title" data-aos="fade-up" data-aos-duration="2000">
         My Services
       </span>
       <div class="cards">
@@ -143,6 +140,46 @@
           <img class="img" src="./assets/image1.png" />
           <span class="title-text">tetetete</span>
           <span class="text">tetetete</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <span class="title"> Contact Me </span>
+      <div class="container">
+        <div class="column">
+          <span class="subtitle">Get in touch</span>
+          <span class="text"
+            >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet
+            dictum sit amet justo donec.
+          </span>
+          <div class="infos">dasdasdas</div>
+        </div>
+        <div class="form">
+          <span class="subtitle">Message Me</span>
+          <form>
+            <div class="first-line">
+              <div class="form-box">
+                <input type="text" name="" required />
+                <label>Name</label>
+              </div>
+              <div class="form-box">
+                <input type="emaail" name="" required />
+                <label>Email</label>
+              </div>
+            </div>
+
+            <div class="form-box">
+              <input type="subject" class="large" name="" required />
+              <label>Subject</label>
+            </div>
+
+            <div class="form-box">
+              <input type="project" class="large" name="" required />
+              <label>Describe project...</label>
+            </div>
+          </form>
         </div>
       </div>
     </section>
