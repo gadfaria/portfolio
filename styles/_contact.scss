@@ -4,7 +4,6 @@
   width: 100%;
   min-height: 100vh;
   position: relative;
-  // align-items: center;
 
   .footer {
     width: 100%;
@@ -12,18 +11,33 @@
     position: absolute;
     bottom: 0;
     left: 0;
-  }
 
-  .title {
-    font-weight: bold;
-    font-size: 48px;
-    line-height: 72px;
-    margin-bottom: 20px;
+    background: url(../assets/retangulo.png);
+
+    .names {
+      margin-top: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: $white;
+
+      .gabiru {
+        font-size: 16px;
+      }
+
+      .mateus {
+        font-size: 12px;
+      }
+    }
   }
 
   .container {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    // align-items: center;
+    width: 100%;
 
     .subtitle {
       font-weight: bold;
@@ -33,9 +47,25 @@
     }
 
     .column {
+      // margin-left: -300px;s
       width: 50%;
       display: flex;
       flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .title {
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 72px;
+        margin-bottom: 20px;
+        margin-left: -280px;
+      }
+
+      .subtitle {
+        // margin-left: -90px;
+        margin-left: -370px;
+      }
 
       .text {
         font-size: 16px;
@@ -45,6 +75,7 @@
       .infos {
         display: flex;
         flex-direction: column;
+        margin-left: -280px;
 
         .info {
           margin-bottom: 25px;
@@ -53,14 +84,20 @@
     }
 
     .form {
+      margin-top: 65px;
       display: flex;
       width: 50%;
       flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .subtitle {
+        margin-left: -40px;
+      }
 
       form {
         .first-line {
           display: flex;
-          // justify-content: center;
           align-items: center;
           flex-direction: row;
           input {
