@@ -7,6 +7,14 @@
 @import "./services";
 @import "./projects";
 @import "./contact";
+@import "./mobile";
+.desktop {
+  display: inline;
+}
+
+.mobile {
+  display: none;
+}
 
 .right {
   position: absolute;
@@ -18,4 +26,14 @@
   position: absolute;
   left: 0;
   height: 100%;
+}
+
+@media only screen and (max-device-width: 768px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: inline;
+  }
 }
