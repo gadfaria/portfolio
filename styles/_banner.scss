@@ -25,12 +25,12 @@
         padding: 10px 20px;
         margin-top: 20px;
         border-radius: 8px;
-				transition: 0.5s;
-				cursor: pointer;
+        transition: 0.5s;
+        cursor: pointer;
       }
 
       .btn:hover {
-				letter-spacing: 1px;
+        letter-spacing: 1px;
       }
 
       .presentation {
@@ -45,19 +45,20 @@
           justify-content: center;
           flex-direction: column;
 
-          * {
-            margin-bottom: 12px;
+          .line-one {
+            margin-bottom: 15px;
           }
 
           .line-one,
           .line-three {
             font-style: normal;
             font-weight: normal;
-            font-size: 32px;
+            font-size: 28px;
             line-height: 48px;
           }
 
           .line-two {
+            margin-bottom: 15px;
             font-style: normal;
             font-weight: bold;
             font-size: 48px;
