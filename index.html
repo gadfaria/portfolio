@@ -12,7 +12,6 @@
   <body>
     <header>
       <a href="#" class="title">Gabriel Faria </a>
-      <div class="menuToggle" onclick="toggleMenu();"></div>
       <ul class="navigation">
         <li><a href="#banner" onclick="toggleMenu();">Home</a></li>
         <li><a href="#about" onclick="toggleMenu();">About</a></li>
@@ -135,8 +134,7 @@
         Projects
       </span>
       <span class="text" data-aos="fade-down" data-aos-duration="2000">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
+        Some companies that I provided services during my developer journey.
       </span>
       <div class="cards">
         <div class="card" data-aos="flip-right" data-aos-duration="2000">
@@ -162,8 +160,8 @@
         </div>
 
         <div class="card" data-aos="flip-right" data-aos-duration="2000">
-          <img class="img" src="./assets/Honeywell-logo (1).png" />
-          <span class="card-text"> Honeywell</span>
+          <img class="img" src="./assets/crescamais.png" />
+          <span class="card-text">Cresça Mais</span>
         </div>
 
         <div class="card" data-aos="flip-right" data-aos-duration="2000">
@@ -171,8 +169,6 @@
           <span class="card-text">Cuponeria</span>
         </div>
       </div>
-      <!-- <div class="cards">teste</div> -->
-      <!-- <div class="cards">teste</div> -->
     </section>
 
     <section class="contact" id="contact">
@@ -182,11 +178,6 @@
       <div class="container">
         <div class="column" data-aos="fade-right" data-aos-duration="2000">
           <span class="subtitle">Get in touch</span>
-          <!-- <span class="text"
-            >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet
-            dictum sit amet justo donec.
-          </span> -->
           <div class="infos">
             <a class="info"><img src="./assets/nome.png" /></a>
             <a class="info"><img src="./assets/address.png" /></a>
@@ -239,9 +230,7 @@
       });
 
       function toggleMenu() {
-        const menuToggle = document.querySelector(".menuToggle");
         const navigation = document.querySelector(".navigation");
-        menuToggle.classList.toggle("active");
         navigation.classList.toggle("active");
       }
 
