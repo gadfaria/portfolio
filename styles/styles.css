@@ -408,13 +408,33 @@ header .navigation li a:hover {
   position: absolute;
   bottom: 0;
   left: 0;
+  background: url(../assets/retangulo.png);
 }
 
-.contact .title {
-  font-weight: bold;
-  font-size: 48px;
-  line-height: 72px;
-  margin-bottom: 20px;
+.contact .footer .names {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #ffffff;
+}
+
+.contact .footer .names .gabiru {
+  font-size: 16px;
+}
+
+.contact .footer .names .mateus {
+  font-size: 12px;
 }
 
 .contact .container {
@@ -425,6 +445,10 @@ header .navigation li a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
 }
 
 .contact .container .subtitle {
@@ -443,6 +467,24 @@ header .navigation li a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact .container .column .title {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 72px;
+  margin-bottom: 20px;
+  margin-left: -280px;
+}
+
+.contact .container .column .subtitle {
+  margin-left: -370px;
 }
 
 .contact .container .column .text {
@@ -458,6 +500,7 @@ header .navigation li a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-left: -280px;
 }
 
 .contact .container .column .infos .info {
@@ -465,6 +508,7 @@ header .navigation li a:hover {
 }
 
 .contact .container .form {
+  margin-top: 65px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -473,6 +517,16 @@ header .navigation li a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact .container .form .subtitle {
+  margin-left: -40px;
 }
 
 .contact .container .form form .first-line {
