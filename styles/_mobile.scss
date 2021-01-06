@@ -1,0 +1,25 @@
+.mobile {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: $blue;
+    display: flex;
+    // flex-direction: row;
+    // align-items: center;
+    // justify-content: center;
+    text-align: center;
+
+    .gear {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .text {
+        font-size: 30px;
+        color: $white;
+        font-weight: 600;
+    }
+    
+}

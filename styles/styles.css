@@ -609,6 +609,43 @@ header .navigation li a:hover {
   font-size: 12px;
 }
 
+.mobile {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: #407BFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+.mobile .gear {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mobile .text {
+  font-size: 30px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.desktop {
+  display: inline;
+}
+
+.mobile {
+  display: none;
+}
+
 .right {
   position: absolute;
   right: 0;
@@ -619,5 +656,14 @@ header .navigation li a:hover {
   position: absolute;
   left: 0;
   height: 100%;
+}
+
+@media only screen and (max-device-width: 768px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: inline;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
