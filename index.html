@@ -2,337 +2,325 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gabriel Faria</title>
-    <link rel="icon" type="image/png" href="./assets/favicon.ico" />
-    <link rel="stylesheet" href="styles/styles.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- 
+    - primary meta tags
+  -->
+    <title>gadfaria</title>
+    <meta name="title" content="gadfaria" />
+    <meta name="description" content="gadfaria portfolio" />
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- 
+    - custom font link
+  -->
+    <link rel="stylesheet" href="./assets/font/font.css" />
+
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="./assets/images/loading.svg" />
+    <link rel="preload" as="image" href="./assets/images/loading-circle.svg" />
   </head>
 
-  <body>
-    <div class="desktop">
-      <header>
-        <a href="#" class="title">Gabriel Faria </a>
-        <ul class="navigation">
-          <li><a href="#banner" onclick="toggleMenu();">Home</a></li>
-          <li><a href="#about" onclick="toggleMenu();">About</a></li>
-          <li><a href="#services" onclick="toggleMenu();">Services</a></li>
-          <li><a href="#projects" onclick="toggleMenu();">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
-        </ul>
-      </header>
+  <body class="active" id="top">
+    <!-- 
+    -#PRELOADING
+  -->
 
-      <img src="./assets/direito.png" class="right" />
+    <div class="loading" data-loading>
+      <img
+        src="./assets/images/loading.svg"
+        width="55"
+        height="55"
+        alt="loading"
+        class="img"
+      />
+      <img
+        src="./assets/images/loading-circle.svg"
+        width="70"
+        height="70"
+        alt=""
+        class="circle"
+      />
+    </div>
 
-      <section class="banner" id="banner">
-        <div class="content">
-          <div class="column" data-aos="fade-right" data-aos-duration="2000">
-            <div class="presentation">
-              <div class="line">
-                <svg
-                  width="3"
-                  height="192"
-                  viewBox="0 0 3 192"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <line
-                    x1="1.5"
-                    y1="-6.55671e-08"
-                    x2="1.50001"
-                    y2="192"
-                    stroke="#407BFF"
-                    stroke-width="3"
-                  />
-                </svg>
-              </div>
-              <div class="text">
-                <span class="line-one">Hello, my name is</span>
-                <span class="line-two">Gabriel Faria</span>
-                <span class="line-three"
-                  >and I'm a <b>full-stack developer</b></span
-                >
+    <!-- 
+    - #HEADER
+  -->
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo">
+          <img
+            src="./assets/images/logo.svg"
+            width="40"
+            height="40"
+            alt="gadfaria home"
+          />
+        </a>
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <img
+            src="./assets/images/menu.svg"
+            width="17"
+            height="17"
+            alt="menu icon"
+          />
+        </button>
+
+        <nav class="navbar" data-navbar>
+          <div class="navbar-top">
+            <a href="#" class="logo">
+              <img
+                src="./assets/images/nav-logo.svg"
+                width="140"
+                height="40"
+                alt="Gabriel home"
+                class="img"
+              />
+            </a>
+
+            <button
+              class="nav-close-btn"
+              aria-label="close menu"
+              data-nav-toggler
+            >
+              <span class="span one"></span>
+              <span class="span two"></span>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="#home" class="navbar-link" data-nav-link>Home</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#about" class="navbar-link" data-nav-link>About</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#contact" class="navbar-link" data-nav-link
+                >Contact us</a
+              >
+            </li>
+          </ul>
+
+          <p class="navbar-title">My Address</p>
+
+          <address class="navbar-text">Minas Gerais, Brasil</address>
+
+          <p class="navbar-text">
+            <a href="tel:5535999751327" class="contact-link"
+              >+55 35 99975-1327</a
+            >
+          </p>
+        </nav>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!-- 
+        - #HERO
+      -->
+
+        <section class="section hero" id="home" aria-label="home">
+          <div class="container">
+            <div class="hero-content">
+              <h1 class="h1 hero-title">gadfaria</h1>
+
+              <p class="hero-text">Software Developer</p>
+            </div>
+          </div>
+
+          <img
+            src="./assets/images/hero-shape.svg"
+            width="211"
+            height="189"
+            alt=""
+            class="shape"
+          />
+        </section>
+
+        <!-- 
+        - #ABOUT
+      -->
+
+        <section class="section about" id="about" aria-label="about me">
+          <div class="container">
+            <div class="about-content">
+              <h2 class="h2 section-title" data-reveal="right">
+                Hi. I’m <br />
+                Gabriel Faria
+              </h2>
+
+              <div class="wrapper has-before" data-reveal="right">
+                <p class="section-text">
+                  A passionate
+                  <em class="em">software developer</em>
+                  who are working in this field for
+                  <em class="em">last 4 years.</em>
+                </p>
+
+                <!-- <img src="./assets/images/signature.png" width="151" height="92" loading="lazy" alt="signature"
+                class="img"> -->
               </div>
             </div>
-            <a class="btn" href="#contact" onclick="toggleMenu();"
-              >Contact me</a
-            >
-          </div>
-          <img
-            class="img"
-            src="./assets/bonecotop.png"
-            data-aos="fade-left"
-            data-aos-duration="2000"
-          />
-        </div>
-      </section>
 
-      <img src="./assets/esquerdo.png" class="left" />
-      <section
-        class="about"
-        id="about"
-        data-aos="fade-right"
-        data-aos-offset="300"
-        data-aos-duration="500"
-        data-aos-easing="ease-in-sine"
-      >
-        <div class="column">
-          <div class="text">
-            <span class="title">About Me</span>
-            <p>
+            <figure class="about-banner" data-reveal="left">
+              <div
+                class="img-holder has-before"
+                style="--width: 512; --height: 684"
+              >
+                <img
+                  src="./assets/images/about-banner.jpg"
+                  width="512"
+                  height="684"
+                  loading="lazy"
+                  alt="Riachard Ryan"
+                  class="img-cover"
+                />
+              </div>
+
+              <img
+                src="./assets/images/about-shape-2.svg"
+                width="659"
+                height="653"
+                loading="lazy"
+                alt=""
+                class="shape shape-2"
+              />
+            </figure>
+
+            <img
+              src="./assets/images/about-shape-3.svg"
+              width="239"
+              height="232"
+              loading="lazy"
+              alt=""
+              class="shape shape-3"
+            />
+          </div>
+          <p class="resume" data-reveal="right">
+            <span>
               Graduated from Computer Engineering at Itajubá Federal University,
               working at developing fullstack applications.
-              <br />
-              <br />
-              I'm proficient at JavaScript and it's superset, TypeScript. Also
-              made some projects using C++ and embedded systems. I commonly use
-              Node.js and React to build applications. I also am knowledgeable
-              in NoSQL databases and ORMs (such as TypeORM or Prisma).
-            </p>
-          </div>
-        </div>
+            </span>
+            <span>
+              I'm currently a full stack developer, working with Node.js and
+              React using the JavaScript/TypeScript language in a US-based
+              company.
+            </span>
+          </p>
+        </section>
+      </article>
+    </main>
 
-        <img class="img" src="./assets/30cmdepica.jpeg" />
-      </section>
+    <!-- 
+    - #FOOTER
+  -->
 
-      <img src="./assets/direito1.png" class="right" />
-      <section class="services" id="services">
-        <span class="title" data-aos="fade-up" data-aos-duration="2000">
-          My Services
-        </span>
-        <div class="cards">
-          <div class="card" data-aos="flip-right" data-aos-duration="2000">
-            <img class="img" src="./assets/oi3.png" />
-            <span class="title-text">Front-end</span>
-            <span class="text"
-              >Web and mobile development using React and Capacitor.</span
-            >
-          </div>
-          <div class="card" data-aos="flip-right" data-aos-duration="2000">
-            <img class="img" src="./assets/oi2.png" />
-            <span class="title-text">Back-end</span>
-            <span class="text"
-              >Server development based on the client's business rule.</span
-            >
-          </div>
-          <div class="card" data-aos="flip-right" data-aos-duration="2000">
-            <img class="img" src="./assets/oi1.png" />
-            <span class="title-text">Maintence</span>
-            <span class="text"
-              >Maintenance of JavaScript and TypeScript systems.</span
-            >
-          </div>
-          <div class="card" data-aos="flip-right" data-aos-duration="2000">
-            <img class="img" src="./assets/oi4.png" />
-            <span class="title-text">Other</span>
-            <span class="text"
-              >Development of bots, extensions and other things.</span
-            >
-          </div>
-        </div>
-      </section>
-
-      <section class="projects" id="projects">
-        <span class="title" data-aos="fade-down" data-aos-duration="2000">
-          Projects
-        </span>
-        <span class="text" data-aos="fade-down" data-aos-duration="2000">
-          Some companies that I provided services during my developer journey.
-        </span>
-        <div class="cards">
-          <div class="card" data-aos="flip-right" data-aos-duration="2000">
-            <img class="img" src="./assets/honeywell.png" />
-            <span class="card-text">Honeywell</span>
-          </div>
-
-          <div class="card" data-aos="flip-right" data-aos-duration="2000">
-            <img class="img" src="./assets/teepad.png" />
-            <span class="card-text"> Teepad</span>
-          </div>
-
-          <div class="card" data-aos="flip-right" data-aos-duration="2000">
-            <img class="img" src="./assets/irricontrol.png" />
-            <span class="card-text">Irricontrol</span>
-          </div>
-        </div>
-
-        <div class="cards">
-          <div class="card" data-aos="flip-right" data-aos-duration="2000">
-            <img class="img" src="./assets/likewater.png" />
-            <span class="card-text">LikeWater</span>
-          </div>
-
-          <div class="card" data-aos="flip-right" data-aos-duration="2000">
-            <img class="img" src="./assets/crescamais.png" />
-            <span class="card-text">Cresça Mais</span>
-          </div>
-
-          <div class="card" data-aos="flip-right" data-aos-duration="2000">
-            <img class="img" src="./assets/cuponeria.jpg" />
-            <span class="card-text">Cuponeria</span>
-          </div>
-        </div>
-      </section>
-
-      <section class="contact" id="contact">
+    <footer class="footer">
+      <div class="footer-top section" id="contact">
         <div class="container">
-          <div class="column" data-aos="fade-right" data-aos-duration="2000">
-            <span class="title" data-aos="fade-down" data-aos-duration="2000">
-              Contact Me
-            </span>
-            <span class="subtitle">Get in touch</span>
-            <div class="infos">
-              <a class="info"><img src="./assets/nome.png" /></a>
-              <a class="info"><img src="./assets/address.png" /></a>
-              <a class="info"><img src="./assets/email.png" /></a>
-              <a class="info" href="https://github.com/gadfaria"
-                ><img src="./assets/github12.png"
-              /></a>
-              <a
-                class="info"
-                href="https://www.linkedin.com/in/gabriel-faria-408821165/"
-                ><img src="./assets/linkedln.png"
-              /></a>
-            </div>
-          </div>
-          <div class="form" data-aos="fade-left" data-aos-duration="2000">
-            <span class="subtitle">Message Me</span>
-            <form>
-              <div class="first-line">
-                <div class="form-box">
-                  <input type="text" name="" required />
-                  <label>Name</label>
-                </div>
-                <div class="form-box">
-                  <input type="email" name="" required />
-                  <label>Email</label>
-                </div>
-              </div>
+          <p class="section-subtitle" data-reveal>Contact Me</p>
 
-              <div class="form-box">
-                <input type="subject" class="large" name="" required />
-                <label>Subject</label>
-              </div>
+          <h2 class="h2 section-title" data-reveal>
+            Work inquiry, Job oportunities? Send Message.
+          </h2>
 
-              <div class="form-box">
-                <input type="project" class="large project" name="" required />
-                <label>Describe project...</label>
-              </div>
+          <a href="#" class="btn-icon" data-reveal>
+            <img
+              src="./assets/images/arrow-forward.svg"
+              width="43"
+              height="20"
+              loading="lazy"
+              alt="arrow-forward icon"
+            />
+          </a>
 
-              <a class="btn"> Send Message </a>
-            </form>
-          </div>
-        </div>
-        <div class="footer">
-          <div class="names">
-            <span class="gabiru"
-              >© 2020 Gabriel Alves de Faria. All right reserved.</span
-            >
-            <span class="mateus"
-              >Design by <a href="https://mateuspaula.dev/">Mateus Souza</a>
-            </span>
-          </div>
-        </div>
-      </section>
-
-      <script type="text/javascript">
-        window.addEventListener("scroll", function () {
-          const header = document.querySelector("header");
-          header.classList.toggle("sticky", window.scrollY > 0);
-        });
-
-        function toggleMenu() {
-          const navigation = document.querySelector(".navigation");
-          navigation.classList.toggle("active");
-        }
-
-        AOS.init();
-      </script>
-    </div>
-
-    <div class="mobile">
-      <span class="text"> mobile version is in construction </span>
-      <div class="gear">
-        <div class="loadingio-spinner-gear-b8wwaounjc">
-          <div class="ldio-sjivtu9v2p">
-            <div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-          </div>
+          <img
+            src="./assets/images/footer-shape.svg"
+            width="185"
+            height="134"
+            loading="lazy"
+            alt=""
+            class="shape"
+          />
         </div>
       </div>
-      <style type="text/css">
-        @keyframes ldio-sjivtu9v2p {
-          0% {
-            transform: rotate(0deg);
-          }
-          50% {
-            transform: rotate(22.5deg);
-          }
-          100% {
-            transform: rotate(45deg);
-          }
-        }
-        .ldio-sjivtu9v2p > div {
-          transform-origin: 100px 100px;
-          animation: ldio-sjivtu9v2p 0.8s infinite linear;
-        }
-        .ldio-sjivtu9v2p > div div {
-          position: absolute;
-          width: 22px;
-          height: 152px;
-          background: #ffffff;
-          left: 100px;
-          top: 100px;
-          transform: translate(-50%, -50%);
-        }
-        .ldio-sjivtu9v2p > div div:nth-child(1) {
-          width: 120px;
-          height: 120px;
-          border-radius: 50%;
-        }
-        .ldio-sjivtu9v2p > div div:nth-child(6) {
-          width: 72px;
-          height: 72px;
-          background: #407bff;
-          border-radius: 50%;
-        }
-        .ldio-sjivtu9v2p > div div:nth-child(3) {
-          transform: translate(-50%, -50%) rotate(45deg);
-        }
-        .ldio-sjivtu9v2p > div div:nth-child(4) {
-          transform: translate(-50%, -50%) rotate(90deg);
-        }
-        .ldio-sjivtu9v2p > div div:nth-child(5) {
-          transform: translate(-50%, -50%) rotate(135deg);
-        }
-        .loadingio-spinner-gear-b8wwaounjc {
-          width: 200px;
-          height: 200px;
-          display: inline-block;
-          overflow: hidden;
-          background: #407bff;
-          /* position: relative; */
-        }
-        .ldio-sjivtu9v2p {
-          width: 100%;
-          height: 100%;
-          position: relative;
-          transform: translateZ(0) scale(1);
-          backface-visibility: hidden;
-          transform-origin: 0 0; /* see note above */
-        }
-        .ldio-sjivtu9v2p div {
-          box-sizing: content-box;
-        }
-        /* generated by https://loading.io/ */
-      </style>
-    </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <a href="#" class="logo">
+            <img
+              src="./assets/images/logo.svg"
+              width="40"
+              height="40"
+              loading="lazy"
+              alt="Gabriel home"
+            />
+          </a>
+
+          <ul class="social-list">
+            <li>
+              <a href="https://github.com/gadfaria" class="social-link">Github</a>
+            </li>
+          </ul>
+
+          <p class="copyright">
+            © 2023 Gabriel Alves de Faria. All right reserved.
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bg has-before">
+        <img
+          src="./assets/images/footer-bg.jpg"
+          width="1920"
+          height="1135"
+          loading="lazy"
+          alt="photography"
+          class="img-cover"
+        />
+      </div>
+    </footer>
+
+    <!-- 
+    - #BACK TO TOP
+  -->
+
+    <a
+      href="#top"
+      class="back-top-btn"
+      aria-label="back to top"
+      data-back-top-btn
+      >0%</a
+    >
+
+    <!-- 
+    - #CUSTOM CURSOR
+  -->
+
+    <div class="cursor" data-cursor></div>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
