@@ -637,7 +637,10 @@ body.active {
   margin-block-end: 35px;
   margin-block-start: 40px;
   padding: 28px;
-  text-align: justify;
+
+  display: flex;
+  flex-direction: column;
+  grid-gap: 10px;
 }
 
 /*-----------------------------------*\
