@@ -79,7 +79,7 @@
   /**
    * border radius
    */
-
+  --blob-radius: 52% 48% 59% 41% / 53% 40% 60% 47%;
   --radius-circle: 50%;
   --radius-5: 5px;
   --radius-25: 25px;
@@ -535,9 +535,57 @@ body.active {
   gap: 45px;
 }
 
-.about .wrapper,
-.about-banner {
+.about .wrapper {
   padding-inline-start: 45px;
+}
+
+.about-banner {
+  border-radius: var(--blob-radius);
+  overflow: hidden;
+  animation: blobAnim 30s linear infinite;
+}
+
+@keyframes blobAnim {
+  0%,
+  100% {
+    border-radius: var(--blob-radius);
+  }
+
+  10% {
+    border-radius: 33% 67% 50% 50% / 43% 39% 61% 57%;
+  }
+
+  20% {
+    border-radius: 51% 49% 31% 69% / 65% 39% 61% 35%;
+  }
+
+  30% {
+    border-radius: 51% 49% 56% 44% / 45% 39% 61% 55%;
+  }
+
+  40% {
+    border-radius: 66% 34% 33% 67% / 48% 71% 39% 52%;
+  }
+
+  50% {
+    border-radius: 46% 54% 33% 67% / 48% 30% 70% 52%;
+  }
+
+  60% {
+    border-radius: 46% 54% 56% 44% / 48% 30% 70% 52%;
+  }
+
+  70% {
+    border-radius: 46% 54% 56% 44% / 65% 53% 47% 35%;
+  }
+
+  80% {
+    border-radius: 67% 33% 56% 44% / 37% 53% 47% 63%;
+  }
+
+  90% {
+    border-radius: 46% 54% 32% 68% / 37% 53% 47% 63%;
+  }
 }
 
 .about .section-title {
@@ -813,15 +861,6 @@ body.active {
 
   .container {
     max-width: 720px;
-  }
-
-  /**
-   * ABOUT
-   */
-
-  .about-banner {
-    max-width: 500px;
-    margin-inline: auto;
   }
 }
 
