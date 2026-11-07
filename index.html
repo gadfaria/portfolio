@@ -2,12 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light" />
 
-    <!-- 
-    - primary meta tags
-  -->
     <title>gadfaria - Software Developer</title>
     <meta name="title" content="gadfaria - Software Developer" />
     <meta
@@ -15,7 +12,6 @@
       content="Portfolio of a software developer passionate about creating innovative solutions."
     />
 
-    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.gadfaria.com/" />
     <meta property="og:title" content="gadfaria - Software Developer" />
@@ -23,12 +19,8 @@
       property="og:description"
       content="Portfolio of a software developer passionate about creating innovative solutions."
     />
-    <meta
-      property="og:image"
-      content="https://i.ibb.co/tscvnV1/meta-tag-img-1.jpg"
-    />
+    <meta property="og:image" content="https://i.ibb.co/tscvnV1/meta-tag-img-1.jpg" />
 
-    <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://www.gadfaria.com/" />
     <meta property="twitter:title" content="gadfaria - Software Developer" />
@@ -36,288 +28,72 @@
       property="twitter:description"
       content="Portfolio of a software developer passionate about creating innovative solutions."
     />
-    <meta
-      property="twitter:image"
-      content="https://i.ibb.co/tscvnV1/meta-tag-img-1.jpg"
+    <meta property="twitter:image" content="https://i.ibb.co/tscvnV1/meta-tag-img-1.jpg" />
+
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&family=Geist+Mono:wght@400&display=swap"
     />
-
-    <!-- 
-    - favicon
-  -->
-    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
-
-    <!-- 
-    - custom css link
-  -->
     <link rel="stylesheet" href="./assets/css/style.css" />
-
-    <!-- 
-    - custom font link
-  -->
-    <link rel="stylesheet" href="./assets/font/font.css" />
-
-    <!-- 
-    - preload images
-  -->
-    <link rel="preload" as="image" href="./assets/images/loading.svg" />
-    <link rel="preload" as="image" href="./assets/images/loading-circle.svg" />
   </head>
 
-  <body class="active" id="top">
-    <!-- 
-    -#PRELOADING
-  -->
+  <body>
+    <main class="page">
+      <header class="hero">
+        <p class="clock" aria-live="off">
+          <time class="clock-time" data-clock-time>--:--</time>
+          <span class="clock-date" data-clock-date>Minas Gerais, Brasil</span>
+        </p>
 
-    <div class="loading" data-loading>
-      <img
-        src="./assets/images/loading.svg"
-        width="55"
-        height="55"
-        alt="loading"
-        class="img"
-      />
-      <img
-        src="./assets/images/loading-circle.svg"
-        width="70"
-        height="70"
-        alt=""
-        class="circle"
-      />
-    </div>
+        <h1 class="name">gadfaria</h1>
+        <p class="lead">Software Developer</p>
+      </header>
 
-    <!-- 
-    - #HEADER
-  -->
-    <header class="header" data-header>
-      <div class="container">
-        <a href="#" class="logo">
-          <img
-            src="./assets/images/logo.svg"
-            width="40"
-            height="40"
-            alt="gadfaria home"
-          />
-        </a>
+      <section aria-labelledby="about-label">
+        <h2 class="label" id="about-label">About</h2>
+        <p class="title">Hi. I’m Gabriel Faria</p>
+        <p class="text">
+          A passionate software developer who has been working in this field
+          for several years.
+        </p>
+        <p class="text muted">
+          Graduated in Computer Engineering at Itajubá Federal University,
+          working on developing fullstack applications.
+        </p>
+      </section>
 
-        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
-          <img
-            src="./assets/images/menu.svg"
-            width="17"
-            height="17"
-            alt="menu icon"
-          />
-        </button>
-
-        <nav class="navbar" data-navbar>
-          <div class="navbar-top">
-            <a href="#" class="logo">
-              <img
-                src="./assets/images/nav-logo.svg"
-                width="140"
-                height="40"
-                alt="Gabriel home"
-                class="img"
-              />
+      <section aria-labelledby="contact-label">
+        <h2 class="label" id="contact-label">Contact Me</h2>
+        <p class="title">Work inquiry, job opportunities? Send a message.</p>
+        <ul class="list">
+          <li>
+            <a class="row" href="mailto:hello@gadfaria.com">
+              <span class="row-title">hello@gadfaria.com</span>
             </a>
+          </li>
+          <li>
+            <a class="row" href="https://github.com/gadfaria">
+              <span class="row-title">GitHub</span>
+            </a>
+          </li>
+          <li>
+            <a class="row" href="tel:+5535999751327">
+              <span class="row-title">+55 35 99975-1327</span>
+            </a>
+          </li>
+        </ul>
+      </section>
 
-            <button
-              class="nav-close-btn"
-              aria-label="close menu"
-              data-nav-toggler
-            >
-              <span class="span one"></span>
-              <span class="span two"></span>
-            </button>
-          </div>
-
-          <ul class="navbar-list">
-            <li class="navbar-item">
-              <a href="#home" class="navbar-link" data-nav-link>Home</a>
-            </li>
-
-            <li class="navbar-item">
-              <a href="#about" class="navbar-link" data-nav-link>About</a>
-            </li>
-
-            <li class="navbar-item">
-              <a href="#contact" class="navbar-link" data-nav-link
-                >Contact Me</a
-              >
-            </li>
-          </ul>
-
-          <p class="navbar-title">My Address</p>
-
-          <address class="navbar-text">Minas Gerais, Brasil</address>
-
-          <p class="navbar-text">
-            <a href="tel:5535999751327" class="contact-link"
-              >+55 35 99975-1327</a
-            >
-          </p>
-        </nav>
-
-        <div class="overlay" data-nav-toggler data-overlay></div>
-      </div>
-    </header>
-
-    <main>
-      <article>
-        <!-- 
-        - #HERO
-      -->
-
-        <section class="section hero" id="home" aria-label="home">
-          <div class="container">
-            <div class="hero-content">
-              <h1 class="h1 hero-title">gadfaria</h1>
-
-              <p class="hero-text">Software Developer</p>
-            </div>
-          </div>
-
-          <img
-            src="./assets/images/hero-shape.svg"
-            width="211"
-            height="189"
-            alt=""
-            class="shape"
-          />
-        </section>
-
-        <!-- 
-        - #ABOUT
-      -->
-
-        <section class="section about" id="about" aria-label="about me">
-          <div class="container">
-            <div class="about-content">
-              <h2 class="h2 section-title" data-reveal="right">
-                Hi. I’m <br />
-                Gabriel Faria
-              </h2>
-
-              <div class="wrapper has-before" data-reveal="right">
-                <p class="section-text">
-                  A passionate
-                  <em class="em">software developer</em>
-                  who has been working in this filed for the
-                  <em class="em">last 5 years.</em>
-                </p>
-              </div>
-            </div>
-
-            <figure class="about-banner" data-reveal="left">
-              <img
-                src="./assets/images/about-banner.jpg"
-                width="512"
-                height="684"
-                loading="lazy"
-                alt="Gabriel Faria"
-                class="img-cover"
-              />
-            </figure>
-
-            <img
-              src="./assets/images/about-shape-3.svg"
-              width="239"
-              height="232"
-              loading="lazy"
-              alt=""
-              class="shape shape-3"
-            />
-          </div>
-          <p class="resume" data-reveal="right">
-            <span>
-              Graduated from Computer Engineering at Itajubá Federal University,
-              working at developing fullstack applications.
-            </span>
-          </p>
-        </section>
-      </article>
+      <footer class="footer">
+        <span>© <span data-year>2026</span> Gabriel Alves de Faria</span>
+        <address>Minas Gerais, Brasil</address>
+      </footer>
     </main>
 
-    <!-- 
-    - #FOOTER
-  -->
-
-    <footer class="footer">
-      <div class="footer-top section" id="contact">
-        <div class="container">
-          <p class="section-subtitle" data-reveal>Contact Me</p>
-
-          <h2 class="h2 section-title" data-reveal>
-            Work inquiry, Job oportunities? Send Message.
-          </h2>
-
-          <a href="mailto:hello@gadfaria.com" class="btn-icon" data-reveal>
-            <img
-              src="./assets/images/arrow-forward.svg"
-              width="43"
-              height="20"
-              loading="lazy"
-              alt="arrow-forward icon"
-            />
-          </a>
-
-          <img
-            src="./assets/images/footer-shape.svg"
-            width="185"
-            height="134"
-            loading="lazy"
-            alt=""
-            class="shape"
-          />
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <div class="container">
-          <a href="#" class="logo"> hello@gadfaria.com </a>
-
-          <ul class="social-list">
-            <li>
-              <a href="mailto:hello@gadfaria.com" class="social-link">Github</a>
-            </li>
-          </ul>
-
-          <p class="copyright">© 2023 Gabriel Alves de Faria</p>
-        </div>
-      </div>
-
-      <div class="footer-bg has-before">
-        <img
-          src="./assets/images/footer-bg.jpg"
-          width="1920"
-          height="1135"
-          loading="lazy"
-          alt="photography"
-          class="img-cover"
-        />
-      </div>
-    </footer>
-
-    <!-- 
-    - #BACK TO TOP
-  -->
-
-    <a
-      href="#top"
-      class="back-top-btn"
-      aria-label="back to top"
-      data-back-top-btn
-      >0%</a
-    >
-
-    <!-- 
-    - #CUSTOM CURSOR
-  -->
-
-    <div class="cursor" data-cursor></div>
-
-    <!-- 
-    - custom js link
-  -->
     <script src="./assets/js/script.js"></script>
   </body>
 </html>
